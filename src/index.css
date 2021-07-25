@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,291 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*body style*/
+
+body {
+  width: 100%;
+  background-color: #E5E6E4;
+  position: absolute;
+}
+
+/*header style*/
+
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: #2C4251;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.name {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  color:#e5e6e4;
+  text-shadow: 5px 5px 5px #de6449;
+  font-size: 45px;
+  font-family: 'Roboto', sans-serif;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.list {
+  list-style-type: none;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+}
+.list a {
+  padding-right: 100px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  color: #e5e6e4;
+  text-shadow: 5px 5px 5px #DE6449;
+}
+
+/*footer style*/
+
+.contact-me {
+  width: 100vw;
+  height: 80px;
+  background-color: #2C4251; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  color:#e5e6e4;
+  text-shadow: 5px 5px 5px #de6449;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+  
+/*hero style*/
+
+.hero {
+  background-image: url("..//src/assets/hero img.png"); 
+  width: 100vw;
+  height: 250px;
+  position: relative;
+}
+.hero h2 {
+  position: absolute;
+  bottom: 25px;
+  right: 100px;
+  font-size: 35px;
+  color:#cfd2cd;
+  text-shadow: 3px 3px 3px #2c4251;
+}
+.profile-img {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: auto;
+  max-height: 180px;
+  margin-left: 180px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px black;
+}
+
+/*main style
+about me style*/
+
+.about-me {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}.side-bar1 {
+  margin: 65px 0px 65px 0px;
+  padding: 25px 25px 25px 25px;
+  border-right: 3px solid #2c4251;
+  display: flex;
+  flex-wrap: wrap;
+}
+.side-bar1 h2 {
+  font-size: 45px;
+  color: black;
+  font-family: 'Roboto', sans-serif; 
+}
+.text {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 20px;
+  color: black;
+  font-family:'Lato', sans-serif;
+}
+
+/* work style*/
+
+.work {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.side-bar2 {
+  margin: 65px 25px 65px 0px;
+  padding: 25px 25px 25px 25px;
+  border-right: 3px solid #2c4251;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.side-bar2 h2 {
+  font-size: 45px;
+  color: black;
+  font-family: 'Roboto', sans-serif;         
+}
+.pictures {
+  margin-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+}
+.project-1{
+
+  margin: 100px 120px 20px 25px;
+  filter: brightness(50%);
+  max-width: 100%;
+
+} 
+.project-2 {
+  margin: 100px 120px 20px 25px;
+  filter: brightness(50%);
+  max-width: 400px;
+  
+}
+.project-1:hover {
+  filter: brightness(100%);
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1500px) {
+  header {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 25px;
+  }
+  footer {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 25px;
+  }
+  .name, .contact {
+      margin: 0;
+      padding-bottom: 15px;
+  }
+  .navigation {
+      width: 100vw;
+      padding-right: 0;
+  }
+  .navigation ul {
+      width: 100vw;
+      justify-content: space-around;
+  }
+  ul a {
+      padding-right: 0;
+  }
+  
+}
+@media screen and (max-width: 1105px){
+  .about-me, .work{
+      flex-direction: column;
+  }
+  .about-me h2, .work h2 {
+      margin: 0px auto;
+      text-align: center;
+      border-bottom: 3px solid #2c4251;
+  }
+  .side-bar1, .side-bar2 {
+      border-right: 0;
+      margin: 0;
+      padding: 10px 0px;
+  }
+  .text {
+      margin: 0 auto;
+      padding: 30px 0px;
+  }
+  .pictures, .horesion {
+      width: auto;
+      margin: 20px auto;
+      
+  }
+  .small-pic {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 25px;
+      
+  }
+  .small-pic img {
+      margin: 0px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .name, .contact{
+      font-size: 36px;
+  }
+  .navigation ul {
+      flex-direction: column;
+  }
+  ul a {
+      font-size: 20px;
+  }
+  ul li {
+      margin-bottom: 10px;
+  }
+  .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .profile-img {
+      margin-left: 0;
+  }
+  .hero h2 {
+      right: auto;
+  }
+  .side-bar1 h2{
+      font-size: 32px;
+  }
+  .text {
+      font-size: 16px;
+  }
+  .side-bar2 h2 {
+      font-size: 32px;
+  }
+
+}
+@media screen and (max-width: 600px){
+  
+  .pictures {
+      max-width: 80%;
+  }
+   .project-2, .project-3 {
+      padding-bottom: 20px;
+  }
 }
