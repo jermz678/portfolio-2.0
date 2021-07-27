@@ -19,12 +19,20 @@ code {
 }
 /*body style*/
 
-body {
+html, body {
   width: 100%;
+  height: 100%;
   background-color: #E5E6E4;
   position: absolute;
 }
 
+/*flex wrapping project*/
+.flex {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /*header style*/
 
 header {
@@ -88,42 +96,24 @@ header {
   font-family: 'Roboto', sans-serif;
 }
   
-/*hero style*/
+/*about me style*/
 
-.hero {
-  background-image: url("..//src/assets/hero img.png"); 
-  width: 100vw;
-  height: 250px;
-  position: relative;
-}
-.hero h2 {
-  position: absolute;
-  bottom: 25px;
-  right: 100px;
-  font-size: 35px;
-  color:#cfd2cd;
-  text-shadow: 3px 3px 3px #2c4251;
-}
 .profile-img {
   position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
   width: auto;
-  max-height: 180px;
-  margin-left: 180px;
-  border-radius: 50%;
+  max-height: 250px;
+  margin-left: 150px;
   box-shadow: 5px 5px 5px black;
 }
-
-/*main style
-about me style*/
 
 .about-me {
   width: 100vw;
   display: flex;
+  height: 100%;
   flex-wrap: wrap;
   justify-content: space-around;
-}.side-bar1 {
+}
+.side-bar1 {
   margin: 65px 0px 65px 0px;
   padding: 25px 25px 25px 25px;
   border-right: 3px solid #2c4251;
@@ -144,48 +134,93 @@ about me style*/
   color: black;
   font-family:'Lato', sans-serif;
 }
+/* project*/
 
-/* work style*/
-
-.work {
-  width: 100vw;
+.projectDiv {
+  margin-top: 125px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items:center;
 }
-.side-bar2 {
-  margin: 65px 25px 65px 0px;
-  padding: 25px 25px 25px 25px;
-  border-right: 3px solid #2c4251;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+
+.projectImages {
+  width: 250px;
+  height: 250px;
 }
-.side-bar2 h2 {
-  font-size: 45px;
-  color: black;
-  font-family: 'Roboto', sans-serif;         
+
+.deployed {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #070101;
+  text-shadow: 5px 5px 5px #DE6449;
 }
-.pictures {
-  margin-bottom: 65px;
+
+/*Form*/
+
+.contact-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
-.project-1{
 
-  margin: 100px 120px 20px 25px;
-  filter: brightness(50%);
-  max-width: 100%;
-
-} 
-.project-2 {
-  margin: 100px 120px 20px 25px;
-  filter: brightness(50%);
-  max-width: 400px;
-  
+.contact-h1 {
+  color:#080808;
+  text-shadow: 5px 5px 5px #de6449;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
 }
-.project-1:hover {
-  filter: brightness(100%);
+
+.contact-form-info {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type=text] {
+  padding: 10px;
+  border-radius:5px;
+  border: none;
+  outline: none;
+}
+input[type=email] {
+  padding: 10px;
+  border-radius:5px;
+  border: none;
+  outline: none;
+}
+.message-holder {
+  margin-top: 15px;
+}
+
+.message {
+  border-radius:5px;
+  border: none;
+  resize: vertical;
+  outline: none;
+  width: 100%;
+}
+
+button {
+  width: 45%;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color:#080808;
+}
+
+/*resume*/
+
+.resume-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-h1 {
+  color:#080808;
+  text-shadow: 5px 5px 5px #de6449;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*media queries*/
