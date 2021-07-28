@@ -6,7 +6,7 @@ import React from 'react';
 function Project( props ) {
     return (
         <div className="projectDiv">
-            <h3> { props.title }</h3>
+            <h3 className="deployed"> { props.title }</h3>
              <img className="projectImages" src={ props.image } alt={ props.alt }/>
              <a href={ props.appLink }>
                  <h3 className="deployed">Deployed App</h3>

@@ -160,6 +160,8 @@ header {
 .projectImages {
   width: 250px;
   height: 250px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .deployed {
@@ -167,6 +169,7 @@ header {
   font-family: 'Roboto', sans-serif;
   color: #070101;
   text-shadow: 5px 5px 5px #DE6449;
+  margin-top: 10px;
 }
 
 /*Form*/

@@ -12,7 +12,7 @@ import './index.css';
 function App() {
 
   return (
-    <Router>
+    <Router basename='/'>
       <div >
         <main className="flex">
           <Header></Header>
