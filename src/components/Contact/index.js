@@ -1,4 +1,5 @@
 import React from 'react';
+import { validateEmail } from '../../utils/helpers';
 
 function Form() {
     return (

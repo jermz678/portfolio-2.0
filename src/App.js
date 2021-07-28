@@ -6,8 +6,6 @@ import About from './components/About';
 import MyWork from './components/MyWork';
 import Form from './components/Contact';
 import Resume from './components/Resume';
-//import Nav from './components/Navigation';
-
 import './App.css';
 import './index.css';
 
@@ -17,10 +15,8 @@ function App() {
     <Router>
       <div >
         <main className="flex">
-          <Header>
-          </Header>
-          
-          <Route exact path="/" component={About}/>
+          <Header></Header>
+          <Route exact path="/About" component={About}/>
           <Route exact path="/myWork" component={MyWork}/>
           <Route exact path="/Contact" component={Form}/>
           <Route exact path="/Resume" component={Resume}/>
