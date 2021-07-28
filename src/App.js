@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './components/About';
@@ -12,14 +12,16 @@ import './index.css';
 function App() {
 
   return (
-    <Router basename='/About'>
+    <Router basename={process.env.PUBLIC_URL}>
       <div >
         <main className="flex">
           <Header></Header>
-          <Route exact path="/About" component={About}/>
-          <Route exact path="/myWork" component={MyWork}/>
-          <Route exact path="/Contact" component={Form}/>
-          <Route exact path="/Resume" component={Resume}/>
+          <Switch>
+            <Route exact path="/" component={About}/>
+            <Route exact path="/myWork" component={MyWork}/>
+            <Route exact path="/Contact" component={Form}/>
+            <Route exact path="/Resume" component={Resume}/>
+          </Switch>
           <Footer></Footer>
         </main>
       </div>
