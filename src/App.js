@@ -1,25 +1,33 @@
 import React from 'react';
-
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './components/About';
 import MyWork from './components/MyWork';
 import Form from './components/Contact';
 import Resume from './components/Resume';
+//import Nav from './components/Navigation';
+
 import './App.css';
 import './index.css';
 
 function App() {
+
   return (
-    
+    <Router>
       <div >
         <main className="flex">
-          <Header></Header>
-          <Resume></Resume>
+          <Header>
+          </Header>
+          
+          <Route exact path="/" component={About}/>
+          <Route exact path="/myWork" component={MyWork}/>
+          <Route exact path="/Contact" component={Form}/>
+          <Route exact path="/Resume" component={Resume}/>
           <Footer></Footer>
         </main>
       </div>
-    
+      </Router>
   );
 }
 
