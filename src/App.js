@@ -12,7 +12,7 @@ import './index.css';
 function App() {
 
   return (
-    <Router basename='/portfolio-2.0/'>
+    <Router basename='/portfolio-2.0'>
       <div >
         <main className="flex">
           <Header></Header>
