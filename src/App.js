@@ -12,11 +12,11 @@ import './index.css';
 function App() {
 
   return (
-    <Router basename='/'>
+    <Router basename='/About'>
       <div >
         <main className="flex">
           <Header></Header>
-          <Route exact path="/" component={About}/>
+          <Route exact path="/About" component={About}/>
           <Route exact path="/myWork" component={MyWork}/>
           <Route exact path="/Contact" component={Form}/>
           <Route exact path="/Resume" component={Resume}/>
