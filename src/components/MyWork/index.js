@@ -6,7 +6,7 @@ import shotMapProject from '../../../src/assets/shotMap.png';
 import weatherAppProject from '../../../src/assets/weather-app.png';
 import passwordGenerator from '../../../src/assets/password.png';
 import javascriptQuiz from '../../../src/assets/javascript-quiz.png';
-
+import FiteSite from '../../../src/assets/fitesite.png'
 function MyWork(){
     return (
         <div>
@@ -52,6 +52,13 @@ function MyWork(){
                 appLink="https://jermz678.github.io/javascript-quiz/."
                 githubLink="https://github.com/jermz678/javascript-quiz">
             </Project>
+            <Project
+                title="The Fite Site Project"
+                image={ FiteSite }
+                alt='fightsite'
+                appLink='https://desolate-reaches-50890.herokuapp.com/'
+                githubLink='https://github.com/fightsite/fightsite1.0'
+            ></Project>
         </div>
     )
 }
